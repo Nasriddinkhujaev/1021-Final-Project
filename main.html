@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Mukhammad Nasriddin - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="images/pp.jpeg" alt="Profile Picture" class="profile-pic">
+    <h1>Mukhammad Nasriddin</h1>
+    <p>Computer Science Student | Wrestler</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#coding-experience">Coding Experience</a></li>
+      <li><a href="#wrestling-achievements">Wrestling Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- about me -->
+  <section id="about">
+    <h2>👋 About Me</h2>
+    <p>
+      Hi, I'm Mukhammad, a Computer Science student with experience in Java, JavaScript, HTML, CSS, and Python. 
+      I have completed a computer science program at Penn Engineering through Heights Philadelphia and earned a certificate for my achievements. 
+      In addition to coding, I am also a competitive athlete, winning multiple wrestling championships at the state and national level. 
+      Being an athlete has taught me discipline, resilience, and the ability to work harder than most — qualities I bring into my passion for technology and problem-solving.
+    </p>
+  </section>
+  
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>🕹️ Projects</h2>
+
+    <!-- price Section -->
+    <div id="btc-price" style="font-size: 20px; margin-top: 20px; text-align: center;">
+        Loading Bitcoin price...
+      </div>
+      
+    <!-- Ball Avoidance Game -->
+    <div class="project">
+        <video id="myVideo" controls class="project-video">
+            <source src="images/colliding-game.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          
+          <script>
+            window.onload = function() {
+              var video = document.getElementById('myVideo');
+              video.playbackRate = 2;  // Set the speed to 1.5x (adjust as needed)
+            }
+          </script>
+      <h3>Ball Avoidance Game (Java)</h3>
+      <p>A mini-game where you avoid bricks falling toward you. Built using object-oriented programming and basic physics in Java.</p>
+      <a href="https://github.com/Nasriddinkhujaev/BLI-Final-Project/blob/main/Main.java" target="_blank" class="button">View Code</a>
+    </div>
+
+    <!-- Hackathon Project -->
+    <div class="project">
+      <img src="images/calorie-app.jpg" alt="Calorie App Screenshot" class="project-img">
+      <h3>Calorie Counter App (Hackathon 2024)</h3>
+      <p>Built a JavaScript app that suggests foods based on your calorie intake during a high school hackathon.</p>
+      <a href="https://github.com/Nasriddinkhujaev/hackathon-project-code.org/blob/main/hackathon%20project%20-%20App%20Lab%20-%20Code.org.html" target="_blank" class="button">View Code</a>
+      <a href="https://studio.code.org/projects/applab/0qBiZx5vde8w8asQ9EnY68zI0AlHVZ8wdvUm_gl_mlY" target="_blank" class="button">Try It</a>
+    </div>
+
+    <!-- Multi-Functional App -->
+    <div class="project">
+      <img src="images/multifunctional-app.jpg" alt="Multi-Functional App Screenshot" class="project-img">
+      <h3>Multi-Functional Mobile App (Code.org)</h3>
+      <p>App with college major rankings, Big Mac prices across countries, and cryptocurrency historical price data. Built with JavaScript in Code.org App Lab.</p>
+      <a href="https://github.com/Nasriddinkhujaev/App-Lab---Final-Project/blob/main/main%20code" target="_blank" class="button">View Code</a>
+      <a href="https://studio.code.org/projects/applab/4gU-zH2xRcv-azqTKN_batbJNn1D3OE5UGPZt3D2f0Y" target="_blank" class="button">Try It</a>
+    </div>
+  </section>
+
+  <!-- Coding Experience Section -->
+  <section id="coding-experience">
+    <h2>💻 Coding Experience & Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Java, JavaScript, Python, HTML, CSS</li>
+      <li><strong>Hackathon:</strong> Created a calorie-counting food suggestion app (JavaScript, 2024)</li>
+      <li><strong>Mobile App:</strong> Built a multi-functional app using Code.org App Lab</li>
+      <li><strong>Java Game:</strong> Developed a ball avoidance game using object-oriented programming and physics</li>
+      <li><strong>Certificate:</strong> Completed the 2024 Heights Philadelphia Blended Learning Initiative - Computer Science Program at Penn Engineering</li>
+    </ul>
+  </section>
+
+  <!-- Wrestling Achievements Section -->
+  <section id="wrestling">
+    <h2>🏆 Wrestling Achievements</h2>
+    <ul>
+      <li>2023 USA Freestyle National Fargo Participant</li>
+      <li>2024 Philadelphia Public League Individual Wrestling Tournament Champion</li>
+      <li>2024 Pennsylvania District 12 Individual Wrestling Tournament Champion</li>
+      <li>2024 District 12 Wrestler of the Year Award</li>
+      <li>2024 Philadelphia Wrestler of the Year Award</li>
+      <li>2025 Temple Outstanding Wrestler Award</li>
+    </ul>
+  
+    <div class="wrestling-gallery hidden">
+        <img src="images/wrestling1.jpg" alt="Wrestling Match">
+        <img src="images/wrestling2.jpg" alt="Wrestling Match">
+        <img src="images/wrestling3.jpg" alt="Wrestling Match">
+    </div>
+    
+  </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>📬 Contact Me</h2>
+    <p>Email: <a href="nasriddinhojayevmuhammad@gmail.com.com">nasriddinhojayevmuhammad@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Nasriddinkhujaev" target="_blank">github.com/Nasriddinkhujaev</a></p>
+  </section>
+  <script>
+    window.addEventListener('scroll', function() {
+      var elements = document.querySelectorAll('.hidden');
+      elements.forEach(function(el) {
+        var position = el.getBoundingClientRect().top;
+        var windowHeight = window.innerHeight;
+
+        if (position < windowHeight - 100) {
+          el.classList.add('show');
+        }
+      });
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 50px 20px 20px;
+  background-color: #4A90E2;
+  color: white;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-bottom: 20px;
+}
+
+/* Navigation */
+nav {
+  background: #333;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #4A90E2;
+}
+
+/* Project */
+.project {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.project-img, video {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.project-video {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+.project h3 {
+  margin: 10px 0;
+}
+
+.project p {
+  margin: 10px 0 15px;
+}
+
+.button {
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 10px 20px;
+  background-color: #4A90E2;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #357ABD;
+}
+
+/* Wrestling pic*/
+#wrestling {
+  background-color: #f7f7f7;
+  padding: 50px 20px;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 1000px;
+  text-align: center; 
+}
+
+#wrestling h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+#wrestling ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#wrestling ul li {
+  font-size: 18px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.wrestling-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.wrestling-gallery img {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.wrestling-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* Contact */
+#contact p {
+  text-align: center;
+  font-size: 18px;
+}
+
+#contact a {
+  color: #4A90E2;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+}
